@@ -19,3 +19,17 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.radix-themes {
+  display: grid;
+  grid-template-columns: 1fr 2fr 6fr 2fr 1fr;
+  grid-template-rows: 100px 600px;
+}
+
+/* Nav Bar Stuff */
+
+#navBar {
+  grid-area: 1 / 1 / 2 / 6;
+}
+
+/* Nav Bar Stuff */
