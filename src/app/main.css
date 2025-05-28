@@ -1,0 +1,9 @@
+#HeadText {
+  grid-area: 1 / 4 / 3 / 7;
+  align-content: center;
+  justify-self: center;
+}
+
+#MainHead {
+  justify-self: center;
+}

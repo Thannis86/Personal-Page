@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Colour Scheme
+https://www.schemecolor.com/pastel-color-tones.php */
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -23,13 +26,31 @@ body {
 .radix-themes {
   display: grid;
   grid-template-columns: 1fr 2fr 6fr 2fr 1fr;
-  grid-template-rows: 100px 600px;
+  grid-template-rows: 60px 750px;
 }
 
 /* Nav Bar Stuff */
 
 #navBar {
   grid-area: 1 / 1 / 2 / 6;
+  background-color: #957dad;
 }
 
-/* Nav Bar Stuff */
+/* Main Stuff */
+
+#MainDiv {
+  background-color: #e0bbe4;
+  grid-area: 2 / 1 / 3 / 6;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#hill1div {
+  grid-area: 4 / 1 / 6 / 11;
+}
+
+#hill1 {
+  width: max-content;
+  height: fit-content;
+}

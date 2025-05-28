@@ -10,7 +10,7 @@ import NavBar from "@/components/navbar/navbar";
 import "../components/navbar/navbar.css";
 
 export const metadata: Metadata = {
-  title: "Cameron Burchnall",
+  title: "My Page",
   description: "Cameron Burchnall's Personal Portfolio",
 };
 
