@@ -1,0 +1,14 @@
+#TestPageGrid {
+  display: grid;
+  grid-area: 2 / 1 / 4 / 6;
+  grid-template-columns: 1fr 2fr 6fr 2fr 1fr;
+  grid-template-rows: 6fr 2fr;
+}
+
+#tsparticles {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  /* position: sticky; */
+  grid-area: 1 / 3 / 2 / 4;
+}
