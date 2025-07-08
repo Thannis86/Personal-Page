@@ -1,6 +1,8 @@
 import "./main.css";
 
-import Langauges from "@/components/Languages/Languages";
+// import Langauges from "@/components/Languages/Languages";
+
+import LanguagesFlipMap from "@/components/Languages/LanguagesFlipMap";
 
 import Project1Flip from "@/components/Flips/Project1Fip";
 
@@ -9,8 +11,10 @@ import Project1Flip from "@/components/Flips/Project1Fip";
 export default function homePage() {
   return (
     <div id="MainDiv">
-      <Langauges />
+      {/* <Langauges /> */}
+      {/* <LanguagesFlip /> */}
       <Project1Flip />
+      <LanguagesFlipMap />
     </div>
   );
 }
