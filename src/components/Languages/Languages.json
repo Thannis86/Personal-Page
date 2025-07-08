@@ -1,0 +1,26 @@
+[
+  {
+    "image": "/Logos/javascript.svg",
+    "name": "Javascript",
+    "alt": "Javascript Language Logo",
+    "info": ""
+  },
+  {
+    "image": "/Logos/html.svg",
+    "name": "HTML",
+    "alt": "HTML Language Logo",
+    "info": ""
+  },
+  {
+    "image": "/Logos/css.svg",
+    "name": "CSS",
+    "alt": "CSS Language Logo",
+    "info": ""
+  },
+  {
+    "image": "/Logos/postgresql.svg",
+    "name": "PG SQL",
+    "alt": "PG SQL Logo",
+    "info": ""
+  }
+]
