@@ -1,0 +1,32 @@
+[
+  {
+    "image": "/beans.jpeg",
+    "name": "Test",
+    "alt": "",
+    "text": "Test"
+  },
+  {
+    "image": "/beans.jpeg",
+    "name": "Test2",
+    "alt": "",
+    "text": "Test2"
+  },
+  {
+    "image": "/beans.jpeg",
+    "name": "Test3",
+    "alt": "",
+    "text": "Test3"
+  },
+  {
+    "image": "/beans.jpeg",
+    "name": "Test4",
+    "alt": "",
+    "text": "Test4"
+  },
+  {
+    "image": "/beans.jpeg",
+    "name": "Test5",
+    "alt": "",
+    "text": "Test5"
+  }
+]
