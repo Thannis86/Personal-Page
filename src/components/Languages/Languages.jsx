@@ -11,19 +11,20 @@ import { useState } from "react";
 import LanguageJSON from "./Languages.json";
 
 export default function LanguageCards() {
-  const [hoveredIndex, setHoveredIndex] = useState(null); // ✅ fixed here
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [hoveredIndex2, setHoveredIndex2] = useState(null);
 
   return (
-    <div className="Over" id="CodesMainCards">
+    <div id="lang-cards-div">
       {LanguageJSON.map((languages, index) => {
         const isHovered = hoveredIndex === index;
 
         return (
-          <div className="container" key={index}>
+          <div className="lang-cards-container" key={index}>
             <motion.div
-              className="grow-card"
+              className="lang-cards-grow"
               layout
-              onHoverStart={() => setHoveredIndex(index)}
+              onClick={() => setHoveredIndex(index)}
               onHoverEnd={() => setHoveredIndex(null)}
               transition={{
                 layout: {
@@ -35,16 +36,22 @@ export default function LanguageCards() {
               }}
             >
               <Card
-                className={`CodesCard ${isHovered ? "expanded" : "compact"}`}
+                className={`lang-cards ${isHovered ? "expanded" : "compact"}`}
               >
                 <motion.div
                   layout
                   animate={{ scale: isHovered ? 1.2 : 1 }}
-                  transition={{ type: "spring", stiffness: 120, damping: 15 }}
+                  transition={{
+                    visualDuration: 0.5,
+                    bounce: 1,
+                    type: "spring",
+                    stiffness: 120,
+                    damping: 15,
+                  }}
                   style={{ width: "100%" }}
                 >
                   <Image
-                    className="CodeLogo"
+                    className="lang-cards-logo"
                     src={languages.image}
                     alt={languages.alt}
                     width={64}
@@ -53,8 +60,10 @@ export default function LanguageCards() {
                 </motion.div>
                 {isHovered && (
                   <>
-                    <Separator my=".5" size="4" className="CodeSep" />
-                    <Heading className="CodeText">{languages.name}</Heading>
+                    <Separator my=".5" size="4" className="lang-cards-sep" />
+                    <Heading className="lang-cards-text">
+                      {languages.name}
+                    </Heading>
                   </>
                 )}
               </Card>
