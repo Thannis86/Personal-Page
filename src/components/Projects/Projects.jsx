@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import "./Projects.css";
-import { Box, Card, Text } from "@radix-ui/themes";
+import { Box, Card, Text, Separator } from "@radix-ui/themes";
 import Projects from "./Projects.json";
 import Image from "next/image";
 
@@ -21,8 +21,8 @@ const ProjectCards = () => {
       {Projects.map((stuff, index) => (
         <div className="projects-container" key={index}>
           <div className={`card ${flippedCards[index] ? "flipped" : ""}`}>
-            <Box className="card-inner">
-              <Card
+            <div className="card-inner">
+              <div
                 className="card-front"
                 onMouseOver={() => handleFlip(index, true)}
                 onClick={() => handleFlip(index, true)}
@@ -34,9 +34,14 @@ const ProjectCards = () => {
                   width={64}
                   height={64}
                 />
-                <div className="card-front-content">{stuff.name}</div>
-              </Card>
-              <Card
+                <div className="card-front-content">
+                  <div className="card-seperator">
+                    <Separator size="4" className="card-sub-separator" />
+                  </div>
+                  <Text className="card-front-text">{stuff.name}</Text>
+                </div>
+              </div>
+              <div
                 className="card-back"
                 onMouseOut={() => handleFlip(index, false)}
                 onClick={() => handleFlip(index, false)}
@@ -44,8 +49,8 @@ const ProjectCards = () => {
                 <div className="card-back-content">
                   <Text className="card-back-text">Project 1 Back</Text>
                 </div>
-              </Card>
-            </Box>
+              </div>
+            </div>
           </div>
         </div>
       ))}
