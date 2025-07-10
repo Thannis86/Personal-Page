@@ -24,7 +24,6 @@ const ProjectCards = () => {
             <div className="card-inner">
               <div
                 className="card-front"
-                onMouseOver={() => handleFlip(index, true)}
                 onClick={() => handleFlip(index, true)}
               >
                 <Image
@@ -43,7 +42,6 @@ const ProjectCards = () => {
               </div>
               <div
                 className="card-back"
-                onMouseOut={() => handleFlip(index, false)}
                 onClick={() => handleFlip(index, false)}
               >
                 <div className="card-back-content">
