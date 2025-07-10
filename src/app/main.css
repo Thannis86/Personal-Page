@@ -1,9 +1,37 @@
-#HeadText {
-  grid-area: 1 / 4 / 3 / 7;
-  align-content: center;
-  justify-self: center;
+#MainDiv {
+  background-color: var(--background);
+  grid-area: 2 / 1 / 3 / 6;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
-#MainHead {
-  justify-self: center;
+#profile-div {
+  grid-area: 1 / 1 / 2 / 10;
+  display: grid;
+  background-color: var(--background);
+}
+
+#about-me-div {
+  grid-area: 2 / 1 / 3 / 10;
+  display: grid;
+  background-color: var(--background2);
+}
+
+#projects-div {
+  grid-area: 3 / 1 / 4 / 10;
+  display: grid;
+  background-color: var(--background);
+}
+
+#languages-div {
+  grid-area: 4 / 1 / 5 / 10;
+  display: grid;
+  background-color: var(--background2);
+}
+
+#get-in-touch-div {
+  grid-area: 5 / 1 / 6 / 10;
+  display: grid;
+  background-color: -var(--background);
 }

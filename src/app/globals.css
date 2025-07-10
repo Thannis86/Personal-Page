@@ -3,48 +3,61 @@
 @tailwind utilities;
 
 /* Colour Scheme
-https://www.schemecolor.com/pastel-color-tones.php */
+https://www.schemecolor.com/lovely-sculpture.php */
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f3f4f6;
+  --background2: #e5e7eb;
+  --navbar: #1e3a8a;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #eceff4;
+    --background2: #d8dee9;
+    --navbar: #1e293b;
+    --text-primary: #2e3a59;
+    --text-secondary: #5e6a86;
+    --text-nav: #f1f5f9;
+    --card1: #d8dee9;
+    --card1-text: #334155;
+    --card2: #cbd5e1;
+    --card2-text: #243444;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0f172a;
+    --background2: #1e293b;
+    --navbar: #0c1a32;
+    --text-primary: #d1d5db;
+    --text-secondary: #9ca3af;
+    --text-nav: #e2e8f0;
+    --card1: #1e293b;
+    --card1-text: #94a3b8;
+    --card2: #334155;
+    --card2-text: #bcccdc;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .radix-themes {
   display: grid;
   grid-template-columns: 1fr 2fr 6fr 2fr 1fr;
-  grid-template-rows: 1fr 15fr;
+  grid-template-rows: 50px 1500px;
 }
 
 /* Nav Bar Stuff */
 
 #navBar {
   grid-area: 1 / 1 / 2 / 6;
-  background-color: #957dad;
+  background-color: var(--navbar);
+  color: var(--text-nav);
 }
 
 /* Main Stuff */
-
-#MainDiv {
-  background-color: #e0bbe4;
-  grid-area: 2 / 1 / 3 / 6;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-}
 
 #hill1div {
   grid-area: 4 / 1 / 6 / 11;
