@@ -2,15 +2,13 @@ import "./main.css";
 
 import LanguageCards from "@/components/Languages/Languages";
 import ProjectCards from "@/components/Projects/Projects";
-import { Text } from "@radix-ui/themes";
-
-// import Grid2 from "@/components/Grid Bits/grid2";
+import Profile from "@/components/Profile/Profile";
 
 export default function homePage() {
   return (
     <div id="MainDiv">
       <div id="profile-div">
-        <Text>Test</Text>
+        <Profile />
       </div>
       <div id="about-me-div"></div>
       <div id="projects-div">
