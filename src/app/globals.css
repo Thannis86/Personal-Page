@@ -46,7 +46,7 @@ https://www.schemecolor.com/lovely-sculpture.php */
 .radix-themes {
   display: grid;
   grid-template-columns: 1fr 2fr 6fr 2fr 1fr;
-  grid-template-rows: 50px 1500px;
+  grid-template-rows: 1fr 30fr;
 }
 
 /* Nav Bar Stuff */
