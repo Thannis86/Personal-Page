@@ -55,6 +55,7 @@ https://www.schemecolor.com/lovely-sculpture.php */
   grid-area: 1 / 1 / 2 / 6;
   background-color: var(--navbar);
   color: var(--text-nav);
+  position: static;
 }
 
 /* Main Stuff */

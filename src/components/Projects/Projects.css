@@ -63,6 +63,7 @@
 .card-front-image {
   display: flex;
   justify-self: center;
+  align-self: center;
   width: 50%;
   height: 50%;
   grid-row: 1 / 2;

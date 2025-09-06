@@ -14,6 +14,14 @@ export default function LanguageCards() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [hoveredIndex2, setHoveredIndex2] = useState(null);
 
+  function hover(index) {
+    if (hoveredIndex === null) {
+      setHoveredIndex(index);
+    } else {
+      setHoveredIndex(null);
+    }
+  }
+
   return (
     <div id="lang-cards-div">
       {LanguageJSON.map((languages, index) => {
@@ -24,8 +32,7 @@ export default function LanguageCards() {
             <motion.div
               className="lang-cards-grow"
               layout
-              onClick={() => setHoveredIndex(index)}
-              onHoverEnd={() => setHoveredIndex(null)}
+              onClick={() => hover(index)}
               transition={{
                 layout: {
                   duration: 0.4,
