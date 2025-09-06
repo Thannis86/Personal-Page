@@ -3,7 +3,7 @@ import { Box, Separator, Text, DropdownMenu, Button } from "@radix-ui/themes";
 export default function NavBar() {
   return (
     <Box id="navBar">
-      <Text id="logoFiller">Test Text</Text>
+      <Text id="logoFiller"></Text>
       <Separator my=".5" size="4" id="navSep" />
       <Box id="dropDown">
         <DropdownMenu.Root>

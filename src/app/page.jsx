@@ -3,6 +3,7 @@ import "./main.css";
 import LanguageCards from "@/components/Languages/Languages";
 import ProjectCards from "@/components/Projects/Projects";
 import Profile from "@/components/Profile/Profile";
+import Footer from "@/components/Footer/footer";
 
 export default function homePage() {
   return (
@@ -18,6 +19,9 @@ export default function homePage() {
         <LanguageCards />
       </div>
       <div id="get-in-touch-div"></div>
+      <div id="footer-div">
+        <Footer />
+      </div>
     </div>
   );
 }
